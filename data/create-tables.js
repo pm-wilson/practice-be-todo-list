@@ -21,7 +21,7 @@ async function run() {
                 id SERIAL PRIMARY KEY NOT NULL,
                 todo VARCHAR(512) NOT NULL,
                 completed BOOLEAN NOT NULL,
-                owner_id INTEGER NOT NULL REFERENCES users(id)
+                user_id INTEGER NOT NULL REFERENCES users(id)
             );
         `);
 
